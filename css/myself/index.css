@@ -1,0 +1,120 @@
+@media screen and (max-width: 767px) {
+  .my {
+    flex-direction: column;
+  }
+  .my .side {
+    width: 100%!important;
+  }
+  .my .side .info {
+    padding-left: 9%!important;
+  }
+}
+.my {
+  display: flex;
+  width: 10rem;
+  text-align: justify;
+}
+.my .side {
+  display: flex;
+  padding: 10px;
+  width: 3rem;
+  background-color: #eee;
+  flex-direction: column;
+}
+.my .side section {
+  margin-bottom: 0.25641rem;
+  text-align: center;
+}
+.my .side section i {
+  display: block;
+  margin: 30px auto 20px;
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.my .side section i img {
+  width: 100%;
+  min-height: 100%;
+}
+.my .side section h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+.my .side section .items {
+  display: inline-block;
+  margin: 0.08547rem;
+  padding: 6px 10px;
+  width: 40%;
+  color: #fff;
+  background: #012684;
+  border-radius: 5px;
+}
+.my .side .info {
+  padding-left: 7%;
+}
+.my .side .info li {
+  line-height: 35px;
+}
+.my .side .info li span {
+  margin-right: 15px;
+  font-size: 28px;
+  color: #bbb;
+  vertical-align: bottom;
+}
+.my .side .count-down {
+  margin: 0.25641rem 0.08547rem;
+  background-color: #dfdfdf;
+}
+.my .side .count-down h3 {
+  font-size: 0.17094rem;
+  text-align: center;
+  font-weight: bold;
+}
+.my .side .count-down .list {
+  display: flex;
+  text-align: center;
+  padding: 0 0.042735rem;
+  line-height: 0.384615rem;
+  font-size: 0.222222rem;
+  word-break: normal;
+}
+.my .side .count-down .list:last-child {
+  font-size: 0.196581rem;
+}
+.my .side .count-down .list span {
+  flex: 1;
+  margin: 0 0.042735rem;
+  height: 0.384615rem;
+  line-height: 0.384615rem;
+}
+.my .main {
+  display: flex;
+  flex: 1;
+  padding: 30px 40px;
+  font-size: 16px;
+  line-height: 32px;
+  background-color: #fff;
+  flex-direction: column;
+}
+.my .main .tag {
+  margin-top: 15px;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+.my .main .title {
+  margin: 30px 0 15px;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: bold;
+}
+.my .main span {
+  font-size: 16px;
+  line-height: 32px;
+  color: #808080;
+}
+.my .main i {
+  margin-top: 10px;
+  font-style: normal;
+}

@@ -1,0 +1,121 @@
+// 针对移动端的 一些修改
+@media screen and (max-width:767px){
+  .my{
+    flex-direction: column;
+    .side{
+      width: 100%!important;
+      .info{
+        padding-left: 9%!important;
+      }
+    }
+  }
+}
+.my{
+  display: flex;
+  width: 10rem;
+  text-align: justify;
+  .side{
+    display: flex;
+    padding: 10px;
+    width: 3rem;
+    background-color: #eee;
+    flex-direction: column;
+    section{
+      margin-bottom: .25641rem;
+      text-align: center;
+      i{
+        display: block;
+        margin: 30px auto 20px;
+        width: 160px;
+        height: 160px;
+        border-radius: 100%;
+        overflow: hidden;
+        img{
+          width: 100%;
+          min-height: 100%;
+        }
+      }
+      h2{
+        font-size: 26px;
+        font-weight: bold;
+      }
+      .items{
+        display: inline-block;
+        margin: .08547rem;
+        padding: 6px 10px;
+        width: 40%;
+        color: #fff;
+        background: #012684;
+        border-radius: 5px;
+      }
+    }
+    .info{
+      padding-left: 7%;
+      li{
+        line-height: 35px;
+        span{
+          margin-right: 15px;
+          font-size: 28px;
+          color: #bbb;
+          vertical-align: bottom;
+        }
+      }
+    }
+    .count-down{
+      margin: .25641rem .08547rem;
+      background-color: #dfdfdf;
+      h3{
+        font-size: .17094rem;
+        text-align: center;
+        font-weight: bold;
+      }
+      .list{
+        display: flex;
+        text-align: center;
+        padding: 0 .042735rem;
+        line-height: .384615rem;
+        font-size: .222222rem;
+        word-break: normal;
+        &:last-child{
+          font-size: .196581rem;
+        }
+        span{
+          flex: 1;
+          margin: 0 .042735rem;
+          height: .384615rem;
+          line-height: .384615rem;
+        }
+      }
+    }
+  }
+  .main{
+    display: flex;
+    flex: 1;
+    padding: 30px 40px;
+    font-size: 16px;
+    line-height: 32px;
+    background-color: #fff;
+    flex-direction: column;
+    .tag{
+      margin-top: 15px;
+      font-size: 18px;
+      color: black;
+      font-weight: bold;
+    }
+    .title{
+      margin: 30px 0 15px;
+      font-size: 20px;
+      line-height: 36px;
+      font-weight: bold;
+    }
+    span{
+      font-size: 16px;
+      line-height: 32px;
+      color: #808080;
+    }
+    i{
+      margin-top: 10px;
+      font-style: normal;
+    }
+  }
+}

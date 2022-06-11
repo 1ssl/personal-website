@@ -1,0 +1,259 @@
+/* 它这里的 设置的 默认 rem 的 应该是 html{ font-size  10px; } */
+
+img {
+  max-width: 100%;
+}
+
+#app {
+  position: relative;
+  width: 10rem;
+  height: 6rem;
+  overflow: hidden;
+}
+
+.ui-big-images {
+  position: absolute;
+  height: 6rem;
+  width: 10rem;
+  overflow: hidden;
+  display: flex;
+}
+
+.ui-big-image {
+  width: 100%;
+  margin-right: -100%;
+}
+.ui-big-image img {
+  -o-object-fit: cover;
+  /* 保持图片原始比例，并剪切部分内容 */
+  object-fit: cover;
+  /* 重置图片大小，并设置图片位置 */
+  -o-object-position: center bottom;
+  object-position: center bottom;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* 暂时注释 */
+/* @media (max-height: 600px) {
+  .ui-big-image img {
+    -o-object-position: center center;
+    object-position: center center;
+  }
+} */
+
+/* 小图片按钮 */
+.ui-thumbnails {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10rem;
+  height: 1rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-right: calc( 45% + 5px);
+}
+
+.ui-thumbnail {
+  display: block;
+  margin-right: 5px;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.ui-cuticle {
+  background-color: #D4A12D;
+  position: absolute;
+  bottom: 0;
+  height: 2.5px;
+  width: 100%;
+}
+
+.ui-thumbnail > img {
+  width: .866838rem;
+  height: .866838rem;
+  /* 保持图片原始比例，并剪切部分内容 */
+  object-fit: cover;
+  /* 重置图片大小，并设置图片位置 */
+  -o-object-position: center bottom;
+  object-position: center bottom;
+}
+
+/* 右下角的内容 */
+.ui-content {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 45%;
+}
+
+.ui-articles {
+  background: #493e56;
+  color: white;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.ui-article {
+  padding: 15px;
+  width: 100%;
+  margin-right: -100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ui-paragraph {
+  margin: 0;
+  font-size: 7px;
+  line-height: 1.7;
+}
+
+.ui-nav {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  background: inherit;
+}
+.ui-nav button {
+  background: #493e56;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: .5em;
+  width: 2em;
+  color: #FFF;
+  font-family: monospace;
+  transition: inherit;
+  transition-duration: 300ms;
+}
+.ui-nav button:hover, .ui-nav button:focus {
+  background: #D4A12D;
+  outline: none;
+}
+.ui-nav button:active {
+  outline: none;
+  -webkit-transform: translateY(0.25em);
+          transform: translateY(0.25em);
+  transition-duration: 100ms;
+}
+
+.ui-heading {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: .299145rem;
+  font-weight: normal;
+}
+.ui-heading:before {
+  content: '';
+  font-size: 10px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* ---------------------------------- */
+.ui-big-image {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.ui-big-image img {
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+}
+
+.ui-big-image[data-active] ~ .ui-big-image {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.ui-big-image[data-active] {
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+.ui-big-image[data-active] img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+/* ---------------------------------- */
+.ui-article {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.ui-article:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #D4A12D;
+  opacity: 1;
+  transition-duration: 0.35s;
+  z-index: 1;
+}
+
+.ui-article[data-active] ~ .ui-article {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.ui-article[data-active] {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+.ui-article[data-active]:before {
+  opacity: 0;
+}
+
+/* ---------------------------------- */
+.ui-thumbnail > img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  transition-duration: 0.35s;
+}
+.ui-thumbnail:active > img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  transition-duration: 100ms;
+}
+.ui-thumbnail:focus {
+  outline: none;
+}
+
+.ui-cuticle {
+  display: none;
+}
+
+.ui-thumbnail[data-active] > img, .ui-thumbnail:hover > img {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+.ui-thumbnail[data-active] .ui-cuticle {
+  display: block;
+}
+
+/* ---------------------------------- */
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  position: relative;
+  transition-property: opacity, -webkit-transform, -webkit-filter;
+  transition-property: transform, opacity, filter;
+  transition-property: transform, opacity, filter, -webkit-transform, -webkit-filter;
+  transition-duration: 0.7s, 0.7s, 0.7s;
+  transition-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+}

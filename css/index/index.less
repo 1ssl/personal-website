@@ -1,0 +1,192 @@
+// 我的学校模块
+.school{
+  width: 10rem;
+  text-align: justify;
+  .head{
+    display: flex;
+    padding-left: .17094rem;
+    height: .854701rem;
+    align-items: center;
+    .title{
+      margin: 0px 0 5px;
+      width: 100%;
+      line-height: .290598rem;
+      font-size: .25641rem;
+      letter-spacing: .17094rem;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+  .content{
+    width: 100%;
+    background-color: skyblue;
+    .items{
+      padding: .128205rem;
+      height: 1.709402rem;
+      .wrap{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        img{
+          width: 1.367521rem;
+          height: 1.367521rem;
+          border-radius: .08547rem;
+          object-fit: cover;
+          object-position: center center;
+        }
+        div{
+          padding: 0 .128205rem;
+          flex: 1;
+          h4{
+            font-size: .205128rem;
+            font-weight: bold;
+          }
+          i{
+            font-size: .153846rem;
+            line-height: .25641rem;
+            font-style: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// 大重庆模块
+.chongqing{
+  width: 10rem;
+  text-align: justify;
+  .head{
+    display: flex;
+    padding-left: .17094rem;
+    height: .854701rem;
+    align-items: center;
+    .title{
+      margin: 0px 0 5px;
+      width: 100%;
+      line-height: .290598rem;
+      font-size: .25641rem;
+      letter-spacing: .17094rem;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+  .content{
+    display: flex;
+    .side{
+      display: flex;
+      padding: 0 .17094rem;
+      width: 2.393162rem;
+      flex-direction: column;
+      .items{
+        position: relative;
+        flex: 1;
+        width: 100%;
+        &:nth-child(-n+3){
+          margin-bottom: .128205rem;
+        }
+        .mask{
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 1.367521rem;
+          line-height: 1.367521rem;
+          font-size: .205128rem;
+          color: #fff;
+          background-color: rgba(100,100,100,.8);
+          text-align: center;
+          border-radius: .205128rem;
+        }
+        img{
+          width: 100%;
+          height: 1.367521rem;
+          object-fit: cover;
+          object-position: center center;
+          border-radius: .17094rem;
+        }
+      }
+    }
+    .main{
+      flex: 1;
+      position: relative;
+      .list{
+        position: relative;
+        width: 100%;
+        height: 6.196581rem;
+        li{
+          display: flex;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          flex-direction: column;
+          img{
+            width: 100%;
+            height: 3.418803rem;
+            object-fit: cover;
+            object-position: center center;
+          }
+          .paragraph{
+            flex: 1;
+            padding: .128205rem;
+            height: 2.777778rem;
+            .title{
+              margin: 0px 0 5px;
+              font-size: .17094rem;
+              line-height: .307692rem;
+              font-weight: bold;
+            }
+            i{
+              line-height: .25641rem;
+              font-size: .136752rem;
+              font-style: normal
+            }
+          }
+        }
+      }
+    }
+    .summary{
+      padding: .17094rem;
+      width: 2.350427rem;
+      height: 6.196581rem;
+      .list{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .items{
+          position: absolute;
+          left: 0;
+          top: 0;
+          .title{
+            margin: 0 0 .128205rem;
+            font-size: .17094rem;
+            line-height: .307692rem;
+            font-weight: bold;
+          }
+          h4{
+            margin-top: .128205rem;
+            font-size: .153846rem;
+            color: black;
+            font-weight: bold;
+          }
+          ul{
+            display: flex;
+            width: 100%;
+            line-height: 0.25641rem;
+            flex-direction: column;
+          }
+          i{
+            margin-top: .08547rem;
+            line-height: .273504rem;
+            font-size: .136752rem;
+            font-style: normal
+          }
+        }
+      }
+      
+    }
+  }
+}

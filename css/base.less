@@ -1,0 +1,254 @@
+// 导入 common.less 文件
+@import "common";
+
+@media screen and (max-width:719px){
+  .footer{
+    padding: .17094rem 2.9rem!important;
+  }
+}
+
+body{
+  background-color: #f3f8fb!important;
+}
+ul{
+  margin: 0!important;
+  padding: 0;
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none!important;
+}
+
+// nav 导航栏
+.nav{
+  display: flex;
+  position: relative;
+  width: 10rem;
+  height: 1.452991rem;
+  .logo{
+    margin-left: .213675rem;
+    height: .854701rem;
+    align-self: center;
+    img{
+      height: 100%;
+    }
+  }
+  .menu{
+    display: flex;
+    position: absolute;
+    right: 0;
+    width: 5.128205rem;
+    .items{
+      
+      position: relative;
+      flex: 1;
+      margin-left: 4px;
+      height: 1.196581rem;
+      text-align: center;
+      a{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+        color: black;
+        flex-direction: column;
+        justify-content: center;
+        transition: .5s;
+        span:last-child{
+          font-size: 16px;
+        }
+      }
+      .bg{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 0%;
+        background-color:#92c528;
+        z-index: -1;
+        transition: 0.4s ease-out;
+      }
+      &:hover{
+        a{
+          color: #fff;
+        }
+        .bg{
+          height: 100%;
+        }
+      }
+    }
+  }
+  .menu-small{
+    position: absolute;
+    width: 100%;
+    height: 1.196581rem;
+    font-size: 24px;
+    span{
+      position: absolute;
+      top: 47%;
+      right: 3%;
+    }
+    .list{
+      display: flex;
+      position: absolute;
+      top: 121%;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      z-index: 1;
+      flex-direction: column;
+      .items{
+        display: flex;
+        position: relative;
+        flex: 1;
+        width: 100%;
+        height: 42px;
+        align-items: center;
+        &:hover{
+          a{
+            color: #92c528;
+          }
+          .underline{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.menu-small .list .items{
+  a{
+    flex: 1;
+    padding-left: 35px;
+    line-height: 42px;
+    font-size: 16px;
+    color: #4D3A12;
+  }
+  .underline{
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #92c528;
+    transition: .35s;
+  }
+}
+
+
+// 页脚代码
+.footer{
+  display: flex;
+  margin: .17094rem 0;
+  padding: .17094rem 3.589744rem;
+  width: 10rem;
+  text-align: center;
+  background-color: #eee;
+  .left{
+    flex: 1;
+    padding: .08547rem;
+    height: 100%;
+    font-size: .153846rem;
+  }
+  .center{
+    flex: 1;
+    padding: .08547rem;
+    height: 100%;
+    font-size: .153846rem;
+    p{
+      margin-bottom: .08547rem;
+    }
+    .list{
+      display: flex;
+      width: 100%;
+      height: 36px;
+      line-height: 36px;
+      justify-content: space-around;
+      a{
+        position: relative;
+        i{
+          display: block;
+          width: 36px;
+          font-size: 24px;
+          color: #000;
+          background-color: #f3f8fb;
+          border-radius: 100%;
+          transition: .5s;
+          &:hover{
+            background-color: #92c528;
+            color: #fff;
+          }
+        }
+        // 对最后微信二维码单独设置
+        .last{
+          position: absolute;
+          width: 100px;
+          left: -50px;
+          bottom: 10px;
+          &::before{
+            left: 45px;
+          }
+          img{
+            width: 100%;
+          }
+        }
+      }
+      
+    }
+  }
+  .right{
+    flex: 1;
+    padding: 0 10px;
+    height: 100%;
+  }
+}
+
+// footer 图标上的文字
+.list a span {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: -25px;
+  right: -25px;
+  padding: 5px;
+  font-size: 1em;
+  border-radius: 2px;
+  color: #92c528;
+  background: #f3f8fb;
+  &::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #f3f8fb;
+  }
+}
+
+// back 
+
+.back{
+  display: none;
+  position: fixed;
+  right: 3%;
+  bottom: 10%;
+  .xs{
+    span{
+      font-size: 28px;
+    }
+  }
+  span{
+    font-size: 48px;
+    background-color: #f3f8fb;
+    border-radius: 50%;
+    transition: .3s;
+    &:hover{
+      color: #fff;
+      background-color: #92c528;
+    }
+  }
+}

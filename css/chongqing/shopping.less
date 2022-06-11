@@ -1,0 +1,94 @@
+// 购物车模块
+.shopping{
+  display: none;
+  width: 1170px;
+  background-color: pink;
+  .head{
+    padding: 0 50px;
+    width: 1170px;
+    height: 120px;
+    background-color: skyblue;
+    .title{
+      margin: 0;
+      line-height: 120px;
+      font-size: 35px;
+      font-weight: bold;
+    }
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    .thead{
+      display: flex;
+      margin-bottom: 15px;
+      height: 35px;
+      line-height: 35px;
+      font-size: 16px;
+      background-color: #eee;
+      justify-content: space-around;
+      align-items: center;
+      input{
+        margin-top: 10px;
+      }
+    }
+    .tbody{
+      display: flex;
+      flex-direction: column;
+      .index{
+        display: none;
+      }
+      .current{
+        background-color: pink!important;
+      }
+      .items{
+        padding: 0 50px;
+        display: flex;
+        width: 100%;
+        height: 150px;
+        background-color: skyblue;
+        align-items: center;
+        justify-content: space-between;
+        .p-place{
+          display: flex;
+          width: 170px;
+          align-items: center;
+        }
+        .p-img{
+          img{
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            object-position: center center;
+          }
+        }
+        .p-times{
+          display: flex;
+          .itxt{
+            border: 1px solid #cacbcb;
+            width: 42px;
+            height: 18px;
+            line-height: 18px;
+            text-align: center;
+            padding: 1px;
+            margin: 0;
+            margin-left: -1px;
+            font-size: 12px;
+            font-family: verdana;
+            color: #333;
+            -webkit-appearance: none;
+          }
+        }
+      }
+    }
+    .tfooter{
+      display: flex;
+      margin-top: 15px;
+      height: 35px;
+      line-height: 35px;
+      font-size: 16px;
+      background-color: #eee;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}

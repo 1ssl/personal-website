@@ -1,0 +1,63 @@
+@media screen and (max-width: 991px) {
+  .school .title {
+    line-height: 0.35rem !important;
+    font-size: 0.3rem !important;
+    letter-spacing: 0.23rem !important;
+  }
+  .school .content .items {
+    padding: 0.15rem !important;
+    height: 2rem!important;
+  }
+  .school .content .items .wrap img {
+    width: 1.7rem !important;
+    height: 1.7rem !important;
+  }
+  .school .content .items .wrap div {
+    padding: 0.15rem !important;
+  }
+  .school .content .items .wrap div h4 {
+    margin: 0.08547rem 0 !important;
+    font-size: 0.26rem !important;
+  }
+  .school .content .items .wrap div i {
+    font-size: 0.23rem !important;
+    line-height: 0.35rem !important;
+  }
+  .chongqing .head .title {
+    line-height: 0.35rem !important;
+    font-size: 0.3rem !important;
+    letter-spacing: 0.23rem !important;
+  }
+}
+@media screen and (max-width: 719px) {
+  .chongqing .paragraph h3 {
+    margin-bottom: 2px!important;
+    line-height: 0.35rem !important;
+    font-size: 0.25rem !important;
+  }
+  .chongqing .paragraph i {
+    display: block;
+    padding: 0.025641rem 0 !important;
+    width: 100%!important;
+    height: 2.12rem !important;
+    line-height: 18px!important;
+    font-size: 10px!important;
+    overflow-y: auto!important;
+  }
+}
+@media screen and (max-width: 423px) {
+  .school .content .items {
+    height: 2.5rem !important;
+  }
+  .school .content .items .wrap img {
+    height: 2rem!important;
+  }
+  .school .content .items .wrap div h4 {
+    margin: 0.08547rem 0 !important;
+    font-size: 10px!important;
+  }
+  .school .content .items .wrap div i {
+    font-size: 10px!important;
+    line-height: 18px!important;
+  }
+}

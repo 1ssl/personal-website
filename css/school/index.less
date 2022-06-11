@@ -1,0 +1,190 @@
+// banner 的 480 以下以及
+@media screen and (max-width:719px){
+  .ui-article{
+    padding: 10px!important;
+    .ui-heading{
+      font-size: 16px;
+    }
+  }
+}
+// banner 的 详细
+
+@media screen and (max-width:479px){
+  .ui-heading{
+    font-size: 18px;
+    text-align: center;
+  }
+  .ui-paragraph{
+    display: none;
+  }
+  .detail .items .summary{
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+.detail{
+  width: 10rem;
+  text-align: justify;
+  .head{
+    display: flex;
+    width: 10rem;
+    height: .854701rem;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    h2,h3,h4{
+      margin: 0;
+      padding: 0;
+      line-height: .854701rem;
+    }
+  }
+  .items{
+    display: flex;
+    padding: 0;
+    height: 3.589744rem;
+    background-color: #f3f8fb;
+    flex-direction: column;
+    .summary{
+      flex: 1;
+      position: relative;
+      box-sizing: border-box;
+      padding: .17094rem;
+      width: 100%;
+      font-size: .162393rem;
+      .title{
+        display: block;
+        margin-bottom: .08547rem;
+        width: 100%;
+        font-size: .205128rem;
+        text-align: center;
+      }
+      .sm{
+        font-size: .358974rem;
+      }
+      p{
+        text-indent: 2em;
+        margin-bottom: .08547rem;
+      }
+      .xs{
+        font-size: .264957rem;
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        top: 1.538462rem; 
+        right: -0.25641rem;
+        display: block;
+        border: solid .128205rem transparent;
+        border-left-color: #f3f8fb;
+        width: 0;
+        height: 0;
+      }
+    }
+    .list-img{
+      display: flex;
+      height: 1rem;
+      background-color: #fff;
+      justify-content: space-between;
+      .items-img{
+        position: relative;
+        width: 1.22rem;
+        height: 1rem;
+        .underline{
+          display: none;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          background-color: #D4A12D;
+          width: 100%;
+          height: 3px;
+          transform: translateX(-50%);
+        }
+        img{
+          position: absolute;
+          width: 100%;
+          height: 95%;
+          transition: all .5s;
+          filter: grayscale(100%);
+          object-fit: cover;
+          object-position: center center;
+          &:hover{
+            filter: grayscale(0%);
+          }
+        }
+      }
+      // 当前的图片设置
+      .current{
+        img{
+          filter: grayscale(0%);
+        }
+        .underline{
+          display: block;
+        }
+      }
+    }
+    i{
+      position: absolute;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: 3.589744rem;
+      img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+      }
+    }
+  }
+}
+
+.detail .list .items:nth-of-type(4n) .summary::after{
+  left: -.247863rem;
+  border: solid .128205rem transparent;
+  border-right-color: #f3f8fb;
+}
+
+
+// 照片墙
+.photo{
+  width: 10rem;
+  .head{
+    display: flex;
+    width: 10rem;
+    height: .854701rem;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    h2,h3,h4{
+      margin: 0;
+      padding: 0;
+      line-height: .854701rem;
+    }
+  }
+  .photo-wall{
+    position: relative;
+    width: 10rem;
+    height: 5.128205rem;
+    background-color: #eee;
+    overflow: hidden;
+    .items{
+      position: absolute;
+      padding: .068376rem .068376rem .034188rem;
+      width: 2.564103rem;
+      font-size: .119658rem;
+      text-align: center;
+      font-style: normal;
+      background-color: #fff;
+      img{
+        width: 100%;
+        vertical-align: bottom;
+        object-fit: cover;
+        object-position: center center;
+      }
+    }
+    img{
+      max-width: 100%;
+    }
+  }
+}

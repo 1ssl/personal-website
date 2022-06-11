@@ -1,0 +1,76 @@
+// 设置常见的屏幕尺寸，修改里面的html文字大小 之后将该文件导入到需要使用的Less文件中
+// 将将整个屏幕定义为 10 等份
+@no:10;
+
+// 移动端设置
+@media screen and (min-width:360px){
+  html{
+    font-size: (360px / @no)!important;
+  }
+}
+@media screen and (min-width:375px){
+  html{
+    font-size: (375px / @no)!important;
+  }
+}
+@media screen and (min-width:384px){
+  html{
+    font-size: (384px / @no)!important;
+  }
+}
+@media screen and (min-width:400px){
+  html{
+    font-size: (400px / @no)!important;
+  }
+}
+@media screen and (min-width:414px){
+  html{
+    font-size: (414px / @no)!important;
+  }
+}
+@media screen and (min-width:424px){
+  html{
+    font-size: (424px / @no)!important;
+  }
+}
+@media screen and (min-width:480px){
+  html{
+    font-size: (480px / @no)!important;
+  }
+}
+@media screen and (min-width:540px){
+  html{
+    font-size: (540px / @no)!important;
+  }
+}
+@media screen and (min-width:720px){
+  html{
+    font-size: (720px / @no)!important;
+  }
+}
+
+// 平板
+@media screen and (min-width:768px){
+  html{
+    font-size: (750px / @no)!important;
+  }
+}
+
+// PC端设置
+@media screen and (min-width:992px){
+  html{
+    font-size: (970px / @no)!important;
+  }
+}
+@media screen and (min-width:1200px){
+  html{
+    font-size: (1170px / @no)!important;
+  }
+}
+
+@media screen and (max-width:767px){
+  .container{
+    width: 10rem;
+    margin: 0 auto!important;
+  }
+}

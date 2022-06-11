@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- 要求当前网页使用IE浏览器最高版本的内核来渲染 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 视口的设置：视口宽度和设备一致，默认的缩放比例和PC端一致，用户不能自行缩放且最大和最小的缩放为1.0 -->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1,user-scalable=0,maximum-scale=1.0,minimum-scale=1.0">
+  <!-- 引入基本共用样式文件 base.css  -->
+  <link rel="stylesheet" href="./css/base.css">
+  <!-- 引入首页样式文件 index.css  -->
+  <link rel="stylesheet" href="./css/index/index.css">
+  <!-- 引入补丁文件 mend.less -->
+  <link rel="stylesheet" href="./css/index/mend.css">
+  <!-- 引入字体图标 iconfont.css -->
+  <link rel="stylesheet" href="./fonts/iconfont.css">
+  <title>主页</title>
+
+  <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- 第一行：解决ie9以下浏览器对html5新增标签的不识别，并导致CSS不起作用的问题 -->
+  <!-- 第二行：解决ie9以下浏览器对css3 Media Query 的不识别 -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="container">
+    <!-- 导航栏模块 -->
+    <div class="row">
+      <div class="nav">
+        <div class="logo">
+          <img src="./images/logo.PNG" alt="">
+        </div>
+        <ul class="menu hidden-xs hidden-sm">
+          <li class="items">
+            <a href="./index.html" target="_blank" style="color:#fff">
+              <span>主 页</span>
+              <span>Home</span>
+            </a>
+            <div class="bg" style="display: block; height: 100%;"></div>
+          </li>
+          <li class="items">
+            <a href="./myself.html" target="_blank">
+              <span>个人介绍</span>
+              <span>Myself</span>
+            </a>
+            <div class="bg"></div>
+          </li>
+          <li class="items">
+            <a href="./school.html" target="_blank">
+              <span>我的学校</span>
+              <span>School</span>
+            </a>
+            <div class="bg"></div>
+          </li>
+          <li class="items">
+            <a href="./chongqing.html" target="_blank">
+              <span>大重庆</span>
+              <span>Chongqing</span>
+            </a>
+            <div class="bg"></div>
+          </li>
+          <li class="items">
+            <a href="./contact.html" target="_blank">
+              <span>联系我们</span>
+              <span>Contact</span>
+            </a>
+            <div class="bg"></div>
+          </li>
+        </ul>
+        <div class="menu-small hidden-md hidden-lg">
+          <span class="glyphicon glyphicon-list"></span>
+          <ul class="list" style="display: none;">
+            <li class="items">
+              <a href="./index.html" target="_blank" style="color:#92c528">主 页</a>
+              <div class="underline" style="width: 100%;"></div>
+            </li>
+            <li class="items">
+              <a href="./myself.html" target="_blank">个人介绍</a>
+              <div class="underline"></div>
+            </li>
+            <li class="items">
+              <a href="./school.html" target="_blank">我的学校</a>
+              <div class="underline"></div>
+            </li>
+            <li class="items">
+              <a href="./chongqing.html" target="_blank">大重庆</a>
+              <div class="underline"></div>
+            </li>
+            <li class="items">
+              <a href="contact.html" target="_blank">联系我们</a>
+              <div class="underline"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 我的学校模块 -->
+    <div class="row">
+      <div class="school">
+        <div class="head">
+          <div class="title">我的学校</div>
+        </div>
+        <div class="content">
+          <div class="items col-xs-12 col-md-6">
+            <div class="wrap">
+              <img src="./images/school/banner-1.jpg" alt="">
+              <div>
+                <h4>图书馆</h4>
+                <i>
+                  图书馆位于三春湖西侧，地处校园中心位置，馆内共有260万余册纸质图书、35000余种中外文期刊(含电子期刊)、54个中外文数据库、93560册特藏文献。
+                </i>
+              </div>
+            </div>
+          </div>
+          <div class="items col-xs-12 col-md-6">
+            <div class="wrap">
+              <img src="./images/school/banner-2.jpg" alt="">
+              <div>
+                <h4>博望亭</h4>
+                <i>
+                  博望亭常常被重师的学子戏称为“望夫亭”，因为经常有一些女孩子站在亭子中等待男朋友到来，总会让人想起“望夫石”的典故。
+                </i>
+              </div>
+            </div>
+          </div>
+          <div class="items col-xs-12 col-md-6">
+            <div class="wrap">
+              <img src="./images/school/banner-3.jpg" alt="">
+              <div>
+                <h4>情人坡</h4>
+                <i>
+                  每所大学都有一个美丽的情人坡，而每一个情人坡都留下过一段段甜蜜浪漫的爱恋，见证过一对对恋人的邂逅相约……成为一代代走出校园的学子们的青春回忆
+                </i>
+              </div>
+            </div>
+          </div>
+          <div class="items col-xs-12 col-md-6">
+            <div class="wrap">
+              <img src="./images/school/banner-4.jpeg" alt="">
+              <div>
+                <h4>三春湖</h4>
+                <i>
+                  三春湖位于图书馆东侧，地处校园中心位置，这是一湾清澈的湖水，湖面水平如镜，倒映着蓝天白云、青山绿树，一切美不胜收，让人仿佛走进画卷之中。
+                </i>
+              </div>
+            </div>
+          </div>
+          <div class="items col-xs-12 col-md-6">
+            <div class="wrap">
+              <img src="./images/school/banner-5.png" alt="">
+              <div>
+                <h4>泛月桥</h4>
+                <i>
+                  泛月桥形如画船、弯月。登桥揽胜如入月宫游仙境。周围湖潭映月，壁潭辉映，人游其中如泛月之上，美景、诗情、画意尽有。
+                </i>
+              </div>
+            </div>
+          </div>
+          <div class="items col-xs-12 col-md-6">
+            <div class="wrap">
+              <img src="./images/school/banner-6.jpg" alt="">
+              <div>
+                <h4>校友会堂</h4>
+                <i>
+                  在不久的将来，校友会堂将会成为学校老师和学弟学妹们新的“打卡点”，也将成为每位重师学子们新的“校友之家”。
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 大重庆模块 -->
+    <div class="row">
+      <div class="chongqing">
+        <div class="head">
+          <div class="title">大重庆</div>
+        </div>
+        <div class="content">
+          <ul class="side">
+            <li class="items">
+              <img src="./images/chongqing/01.jpg" alt="">
+              <div class="mask">磁器口古镇</div>
+            </li>
+            <li class="items">
+              <img src="./images/chongqing/02.jpg" alt="">
+              <div class="mask">洪崖洞</div>
+            </li>
+            <li class="items">
+              <img src="./images/chongqing/03.jpg" alt="">
+              <div class="mask">长江索道</div>
+            </li>
+            <li class="items">
+              <img src="./images/chongqing/04.jpg" alt="">
+              <div class="mask">解放碑</div>
+            </li>
+          </ul>
+          <div class="main">
+            <ul class="list">
+              <li class="items" style="display: block;">
+                <img src="./images/chongqing/01.jpg" alt="">
+                <div class="paragraph">
+                  <h3 class="title">历史沿革</h3>
+                  <i>
+                    磁器口最早的名字叫白岩场，始于(998-1003年)宋真宗咸平年间，因为这里曾有一座白岩寺而得名。明建文四年，建文帝朱允炆被其四叔朱棣篡位，逃出皇宫后削发为僧。当他流落到巴渝一带时，曾在白岩山上的宝轮寺隐匿长达四五年。世人知情后，就以皇帝真龙天子曾经隐居在此的事实而将宝轮寺改名为龙隐寺，白岩场也被改称为龙隐镇。清朝初年，瓷器在很长一段时间里成为龙隐镇的主要产业。1918年，瓷器本地商绅集资在镇中青草坡创建了新工艺制瓷的"蜀瓷厂"，远销蜀外。后来随着工艺进步，瓷器品种增多，名气也扩大了起来。龙隐镇里，瓷器业最发达时有70多家。
+                  </i>
+                </div>
+              </li>
+              <li class="items" style="display: none;">
+                <img src="./images/chongqing/02.jpg" alt="">
+                <div class="paragraph">
+                  <h3 class="title">建设形态</h3>
+                  <i>
+                    洪崖洞"一态、三绝、四街、八景"的经营形态体现了巴渝文化休闲业态，"一态"指的是文化休闲业态。"三绝"指的是吊脚楼、集镇老街、巴文化；"四街"指洪崖洞的四条街：娱乐无极限"的纸盐河动感酒吧街"；重庆大观园的"天成巷巴渝风情街"；老城墙岩石崖体边古时的石板道，是"洪崖洞盛宴街美食街"；沧白路上是"城市阳台异域风情街"；街上有重庆首家法兰西风情的滨江时尚酒店。"八景"指的是洪崖洞滴翠、两江汇流、吊脚楼群、洪崖群雕、城市阳台、巴文化柱、滨江好吃街、嘉陵夕照。
+                  </i>
+                </div>
+              </li>
+              <li class="items" style="display: none;">
+                <img src="./images/chongqing/03.jpg" alt="">
+                <div class="paragraph">
+                  <h3 class="title">历史沿革</h3>
+                  <i>
+                    2013年初，经重庆市旅游局、渝中区旅游局推荐，重庆长江索道、嘉陵西村作为"景区排头兵"，备战创建国家3A级景区，助推"重庆美丽山水城市"的建设。
+                    2013年11月5日，重庆长江索道景区正式通过景区评定小组验收，成为重庆市又一处国家3A级景区。
+                    2016年4月9日，重庆市索道公司发布消息，重庆长江索道将于4月18日起停运，进行设备年度检修。
+                    2018年1月31日，重庆长江索道景区正式通过景区评定小组验收，成为重庆市又一处国家4A级景区。
+                    2018年2月6日，达到国家4A级旅游景区标准的要求，批准为国家4A级旅游景区。
+                  </i>
+                </div>
+              </li>
+              <li class="items" style="display: none;">
+                <img src="./images/chongqing/04.jpg" alt="">
+                <div class="paragraph">
+                  <h3 class="title">建筑特色</h3>
+                  <i>
+                    新世纪百货大楼前的木凳，花架、小叶榕木，好吃街中的真人大小的雕塑等是解放碑步行街优良的环境设施的代表。解放碑步行街的街道长期设花坛，两旁植行道树，这样做可以美化休闲空间，在一定程度上弥补街区本身绿化的不足。解放碑步行街通过多样化的边界来界定空间，如绿篱、地面的高差以及材质的变化，还有檐廊、建筑物的内凹界面等等来合理地界定出与购物人流分开的相对独立的空间，创造闹中取静的休息空间。
+                  </i>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="summary hidden-xs hidden-sm">
+            <div class="list">
+              <div class="items" style="display: block;">
+                <h3 class="title">磁器口古镇</h3>
+                <h4>基本信息</h4>
+                <ul>
+                  <li>
+                    <span class="iconfont icon-dizhi"></span>
+                    <span class="tag">地理位置</span>
+                    重庆嘉陵江畔
+                  </li>
+                  <li>
+                    <span class="iconfont icon-dengji"></span>
+                    <span class="tag">景点级别</span>
+                    国家AAAA级景区
+                  </li>
+                  <li>
+                    <span class="iconfont icon-jiagebaohu"></span>
+                    <span class="tag">门票价格</span>
+                    免费
+                  </li>
+                  <li>
+                    <span class="iconfont icon-bar_icon_shijian"></span>
+                    <span class="tag">开放时间</span>
+                    全天
+                  </li>
+                </ul>
+                <h4>景点简介</h4>
+                <i>
+                  磁器口古镇，原名龙隐镇
+                  ，国家AAAA级景区，中国历史文化名街，重庆市重点保护传统街，重庆"新巴渝十二景"，巴渝民俗文化旅游圈。磁器口古镇位于重庆市沙坪坝区嘉陵江畔，始建于宋代，拥有"一江两溪三山四街"的独特地貌，形成天然良港，是嘉陵江边重要的水陆码头。
+                </i>
+              </div>
+              <div class="items" style="display: none;">
+                <h3 class="title">洪崖洞</h3>
+                <h4>基本信息</h4>
+                <ul>
+                  <li>
+                    <span class="iconfont icon-dizhi"></span>
+                    <span class="tag">地理位置</span>
+                    重庆嘉陵江畔
+                  </li>
+                  <li>
+                    <span class="iconfont icon-yidimianji"></span>
+                    <span class="tag">占地面积</span>
+                    4.6万平方米
+                  </li>
+                  <li>
+                    <span class="iconfont icon-shijian"></span>
+                    <span class="tag">游玩时长</span>
+                    建议2-4小时
+                  </li>
+                  <li>
+                    <span class="iconfont icon-bar_icon_shijian"></span>
+                    <span class="tag">开放时间</span>
+                    全天
+                  </li>
+                </ul>
+                <h4>景点简介</h4>
+                <i>
+                  洪崖洞位于重庆市核心商圈解放碑沧白路、长江、嘉陵江两江交汇的滨江地带，坐拥城市旅游景观、商务休闲景观和城市人文景观于一体。以具巴渝传统建筑特色的"吊脚楼"风貌为主体，依山就势，沿江而建，解放碑直达江滨。
+                  洪崖洞拥有2300多年的历史。"洪崖洞民俗风貌区"项目是2005年重庆市政府"八大民心工程"之一，总面积4.6万平方米，是"重庆市重点景观工程"和"AAA级重点旅游项目工程"。
+                </i>
+              </div>
+              <div class="items" style="display: none;">
+                <h3 class="title">长江索道</h3>
+                <h4>基本信息</h4>
+                <ul>
+                  <li>
+                    <span class="iconfont icon-dizhi"></span>
+                    <span class="tag">地理位置</span>
+                    长江上游地区
+                  </li>
+                  <li>
+                    <span class="iconfont icon-dengji"></span>
+                    <span class="tag">景点级别</span>
+                    国家AAAA级景区
+                  </li>
+                  <li>
+                    <span class="iconfont icon-jiagebaohu"></span>
+                    <span class="tag">门票价格</span>
+                    单程20元
+                  </li>
+                  <li>
+                    <span class="iconfont icon-bar_icon_shijian"></span>
+                    <span class="tag">开放时间</span>
+                    7:30~21:30
+                  </li>
+                </ul>
+                <h4>景点简介</h4>
+                <i>
+                  长江索道位于中国重庆，是重庆第二条跨江索道(第一条为嘉陵江索道(已拆除))，已经运行三十余年，被誉为"万里长江第一条空中走廊"和"山城空中公共汽车"。
+                  长江索道是中国自行设计制造的大型跨江客运索道，全长1166米，连通重庆的渝中区和南岸区，往返于渝中区的新华路(轨道交通小什字站)和南岸区的上新街，速度6米/秒，运行时间4分钟，日运客量1.05万人次。
+                </i>
+              </div>
+              <div class="items" style="display: none;">
+                <h3 class="title">解放碑</h3>
+                <h4>基本信息</h4>
+                <ul>
+                  <li>
+                    <span class="iconfont icon-dizhi"></span>
+                    <span class="tag">地理位置</span>
+                    重庆市渝中区
+                  </li>
+                  <li>
+                    <span class="iconfont icon-yidimianji"></span>
+                    <span class="tag">占地面积</span>
+                    3.6平方米
+                  </li>
+                  <li>
+                    <span class="iconfont icon-shijian"></span>
+                    <span class="tag">游玩时长</span>
+                    建议2~4小时
+                  </li>
+                  <li>
+                    <span class="iconfont icon-bar_icon_shijian"></span>
+                    <span class="tag">开放时间</span>
+                    全天
+                  </li>
+                </ul>
+                <h4>景点简介</h4>
+                <i>
+                  磁器口古镇，原名龙隐镇
+                  ，国家AAAA级景区，中国历史文化名街，重庆市重点保护传统街，重庆"新巴渝十二景"，巴渝民俗文化旅游圈。磁器口古镇位于重庆市沙坪坝区嘉陵江畔，始建于宋代，拥有"一江两溪三山四街"的独特地貌，形成天然良港，是嘉陵江边重要的水陆码头。
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- 页脚模块 -->
+    <div class="row">
+      <div class="footer">
+        <div class="center">
+          <div class="copyright">
+            <p class="hidden-xs">重庆师范大学计算机与信息科学学院</p>
+            <p class="hidden-xs">计算机科学与技术2020级 (对口高职)</p>
+            <p>石松林个人网站 版权所有&copy;</p>
+            <p></p>
+          </div>
+          <ul class="list">
+            <span class="hidden-xs">联系方式</span>
+            <li>
+              <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2303418053&amp;site=qq&amp;menu=yes">
+                <i class="iconfont icon-tubiao215"></i>
+                <span class="hidden-xs">QQ</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:15736576364">
+                <i class="iconfont icon-dianhua"></i>
+                <span class="hidden-xs">电话</span>
+              </a>
+            </li>
+            <li>
+              <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=2303418053@qq.com" target="_blank">
+                <i class="iconfont icon-youxiang"></i>
+                <span class="hidden-xs">邮箱</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <i class="iconfont icon-weixin"></i>
+                <span class="last"><img src="./images/QR.png" alt=""></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 返回顶部模块 -->
+    <div class="back">
+      <div class="xs visible-xs">
+        <span class="iconfont icon-fanhuidingbu"></span>
+      </div>
+      <div class="hidden-xs">
+        <span class="iconfont icon-fanhuidingbu"></span>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <!-- 引入主页 index.js -->
+  <script src="./js/index/index.js"></script>
+  <!-- 引入基本共用 base.js  -->
+  <script src="./js/base.js"></script>
+  <!-- 引入补丁 mend.js  -->
+  <script src="./js/mend.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>

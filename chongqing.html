@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- 要求当前网页使用IE浏览器最高版本的内核来渲染 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 视口的设置：视口宽度和设备一致，默认的缩放比例和PC端一致，用户不能自行缩放且最大和最小的缩放为1.0 -->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1,user-scalable=0,maximum-scale=1.0,minimum-scale=1.0">
+  <!-- 引入基本共用样式文件 base.css  -->
+  <link rel="stylesheet" href="./css/base.css">
+  <!-- 引入首页样式 index.css  -->
+  <link rel="stylesheet" href="./css/chongqing/index.css">
+  <!-- 引入购物车样式 shopping.css -->
+  <link rel="stylesheet" href="./css/chongqing/shopping.css">
+  <!-- 引入补丁文件 mend.css -->
+  <link rel="stylesheet" href="./css/chongqing/mend.css">
+  <!-- 引入字体图标 iconfont.css -->
+  <link rel="stylesheet" href="./fonts/iconfont.css">
+  <title>大重庆</title>
+
+  <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- 第一行：解决ie9以下浏览器对html5新增标签的不识别，并导致CSS不起作用的问题 -->
+  <!-- 第二行：解决ie9以下浏览器对css3 Media Query 的不识别 -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="container">
+    <!-- 导航栏 -->
+    <div class="row">
+      <div class="nav">
+        <div class="logo">
+          <img src="./images/logo.PNG" alt="">
+        </div>
+        <ul class="menu hidden-xs hidden-sm">
+          <li class="items">
+            <a href="./index.html" target="_blank">
+              <span>主 页</span>
+              <span>Home</span>
+            </a>
+            <div class="bg"></div>
+          </li>
+          <li class="items">
+            <a href="./myself.html" target="_blank">
+              <span>个人介绍</span>
+              <span>Myself</span>
+            </a>
+            <div class="bg"></div>
+          </li>
+          <li class="items">
+            <a href="./school.html" target="_blank">
+              <span>我的学校</span>
+              <span>School</span>
+            </a>
+            <div class="bg"></div>
+          </li>
+          <li class="items">
+            <a href="./chongqing.html" target="_blank" style="color:#fff">
+              <span>大重庆</span>
+              <span>Chongqing</span>
+            </a>
+            <div class="bg" style="display: block; height: 100%;"></div>
+          </li>
+          <li class="items">
+            <a href="./contact.html" target="_blank">
+              <span>联系我们</span>
+              <span>Contact</span>
+            </a>
+            <div class="bg"></div>
+          </li>
+        </ul>
+        <div class="menu-small hidden-md hidden-lg">
+          <span class="glyphicon glyphicon-list"></span>
+          <ul class="list" style="display: none;">
+            <li class="items">
+              <a href="./index.html" target="_blank">主 页</a>
+              <div class="underline"></div>
+            </li>
+            <li class="items">
+              <a href="./myself.html" target="_blank">个人介绍</a>
+              <div class="underline"></div>
+            </li>
+            <li class="items">
+              <a href="./school.html" target="_blank">我的学校</a>
+              <div class="underline"></div>
+            </li>
+            <li class="items">
+              <a href="./chongqing.html" target="_blank" style="color:#92c528">大重庆</a>
+              <div class="underline" style="width: 100%;"></div>
+            </li>
+            <li class="items">
+              <a href="contact.html" target="_blank">联系我们</a>
+              <div class="underline"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 轮播图模块 -->
+    <div class="row">
+      <div class="banner">
+        <ul class="list clearfix">
+          <li class="items">
+            <a href="javascript:;"><img src="./images/chongqing/01.jpg" alt=""></a>
+          </li>
+          <li class="items">
+            <a href="javascript:;"><img src="./images/chongqing/02.jpg" alt=""></a>
+          </li>
+          <li class="items">
+            <a href="javascript:;"><img src="./images/chongqing/03.jpg" alt=""></a>
+          </li>
+          <li class="items">
+            <a href="javascript:;"><img src="./images/chongqing/04.jpg" alt=""></a>
+          </li>
+        </ul>
+        <ol class="lis"></ol>
+        <div class="button hidden-xs">
+          <span class="arrow-l">
+            <span class="iconfont icon-zuojiantou_huaban"></span>
+          </span>
+          <span class="arrow-r">
+            <span class="iconfont icon-youjiantou_huaban"></span>
+          </span>
+        </div>
+        <div class="info hidden-xs">
+          <div class="items">
+            <h3 class="title">磁器口古镇</h3>
+            <p>磁器口古镇，原名龙隐镇
+              ，国家AAAA级景区，中国历史文化名街，重庆市重点保护传统街，重庆"新巴渝十二景"，巴渝民俗文化旅游圈。磁器口古镇位于重庆市沙坪坝区嘉陵江畔，始建于宋代，拥有"一江两溪三山四街"的独特地貌，形成天然良港，是嘉陵江边重要的水陆码头。
+            </p>
+            <div class="more">
+              <a href="#one">
+                <span class="iconfont icon-hechaxiangxi"></span>查看更多
+              </a>
+              <a href="javascript:;" class="one">
+                <span class="iconfont icon-xiangqu">添加到想去</span>
+                <span class="iconfont icon-wanchenggouxuan" style="display: none;">已添加</span>
+              </a>
+            </div>
+          </div>
+          <div class="items">
+            <h3 class="title">洪崖洞</h3>
+            <p>洪崖洞位于重庆市核心商圈解放碑沧白路、长江、嘉陵江两江交汇的滨江地带，坐拥城市旅游景观、商务休闲景观和城市人文景观于一体。以具巴渝传统建筑特色的"吊脚楼"风貌为主体，依山就势，沿江而建，解放碑直达江滨。
+            </p>
+            <div class="more">
+              <a href="#two">
+                <span class="iconfont icon-hechaxiangxi"></span>查看更多
+              </a>
+              <a href="javascript:;" class="two">
+                <span class="iconfont icon-xiangqu">添加到想去</span>
+                <span class="iconfont icon-wanchenggouxuan" style="display: none;">已添加</span>
+              </a>
+            </div>
+          </div>
+          <div class="items">
+            <h3 class="title">长江索道</h3>
+            <p>长江索道(Yangtze River Cableway)，位于中国重庆，是重庆第二条跨江索道(第一条为嘉陵江索道(已拆除))，已经运行三十余年，被誉为"万里长江第一条空中走廊"和"山城空中公共汽车"。
+            </p>
+            <div class="more">
+              <a href="#three">
+                <span class="iconfont icon-hechaxiangxi"></span>查看更多
+              </a>
+              <a href="javascript:;" class="three">
+                <span class="iconfont icon-xiangqu">添加到想去</span>
+                <span class="iconfont icon-wanchenggouxuan" style="display: none;">已添加</span>
+              </a>
+            </div>
+          </div>
+          <div class="items">
+            <h3 class="title">解放碑步行街</h3>
+            <p>
+              解放碑步行街，位于重庆市渝中区，1997年，由重庆市渝中区政府投资3000万元，以解放碑(人民解放纪念碑)为中心将解放碑大十字地区(民权路、民族路和邹容路的共2.24万平方米面积)改造成中国西部第一条商业步行街--解放碑中心购物广场。
+            </p>
+            <div class="more">
+              <a href="#four">
+                <span class="iconfont icon-hechaxiangxi"></span>查看更多
+              </a>
+              <a href="javascript:;" class="four">
+                <span class="iconfont icon-xiangqu">添加到想去</span>
+                <span class="iconfont icon-wanchenggouxuan" style="display: none;">已添加</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 主要内容模块 -->
+    <div class="row">
+      <div class="main">
+        <div class="head">
+          <h3 class="title">重庆旅游景点介绍</h3>
+          <div class="want-go">
+            <span class="iconfont icon-xiangqu">我的心仪地点</span>
+            <div class="sup"></div>
+          </div>
+        </div>
+        <div class="list">
+          <div class="items col-xs-12 col-md-6">
+            <div class="row"><img src="./images/chongqing/01.jpg" alt=""></div>
+          </div>
+          <div class="items info col-xs-12 col-md-6" id="one">
+            <span class="title">磁器口古镇</span>
+            <p>基本信息</p>
+            <ul class="summary">
+              <li>
+                <span class="iconfont icon-dizhi"></span>
+                <span class="tag">地理位置</span>
+                重庆沙坪坝区嘉陵江畔
+              </li>
+              <li>
+                <span class="iconfont icon-dengji"></span>
+                <span class="tag">景点级别</span>
+                国家AAAA级景区
+              </li>
+              <li>
+                <span class="iconfont icon-jiagebaohu"></span>
+                <span class="tag">门票价格</span>
+                免费
+              </li>
+              <li>
+                <span class="iconfont icon-bar_icon_shijian"></span>
+                <span class="tag">开放时间</span>
+                全天
+              </li>
+            </ul>
+            <p>详细介绍</p>
+            <span class="paragraph"> 磁器口古镇，原名龙隐镇
+              ，国家AAAA级景区，中国历史文化名街，重庆市重点保护传统街，重庆"新巴渝十二景"，巴渝民俗文化旅游圈。磁器口古镇位于重庆市沙坪坝区嘉陵江畔，始建于宋代，拥有"一江两溪三山四街"的独特地貌，形成天然良港，是嘉陵江边重要的水陆码头。
+              磁器口古镇，曾经"白日里千人拱手，入夜后万盏明灯"繁盛一时。巴渝文化、宗教文化、沙磁文化、红岩文化和民间文化，各具特色。一条石板路，千年磁器口，是重庆古城的缩影和象征，被赞誉为"小重庆"。磁器口古镇开发有榨油、抽丝、制糖、捏面人、川戏等传统表演项目和各种传统小吃、茶馆等，每年春节举办的磁器口庙会是最具特色的传统活动，吸引数万市民前往参与。
+              2020年11月18日，当选"成渝十大文旅产业地标"。
+            </span>
+            <i class="one">
+              <span class="iconfont icon-xiangqu">添加到想去</span>
+              <span class="iconfont icon-wanchenggouxuan" style="display: none;">已添加</span>
+            </i>
+          </div>
+          <div class="items col-xs-12 col-md-6 col-md-push-6">
+            <div class="row"><img src="./images/chongqing/02.jpg" alt=""></div>
+          </div>
+          <div class="items info col-xs-12 col-md-6 col-md-pull-6" id="two">
+            <span class="title">洪崖洞</span>
+            <p>基本信息</p>
+            <ul class="summary">
+              <li>
+                <span class="iconfont icon-dizhi"></span>
+                <span class="tag">地理位置</span>
+                重庆市长江和嘉陵江交汇处
+              </li>
+              <li>
+                <span class="iconfont icon-yidimianji"></span>
+                <span class="tag">占地面积</span>
+                4.6万平方米
+              </li>
+              <li>
+                <span class="iconfont icon-shijian"></span>
+                <span class="tag">游玩时长</span>
+                建议2-4小时
+              </li>
+              <li>
+                <span class="iconfont icon-bar_icon_shijian"></span>
+                <span class="tag">开放时间</span>
+                全天
+              </li>
+            </ul>
+            <p>详细介绍</p>
+            <span class="paragraph">
+              洪崖洞位于重庆市核心商圈解放碑沧白路、长江、嘉陵江两江交汇的滨江地带，坐拥城市旅游景观、商务休闲景观和城市人文景观于一体。以具巴渝传统建筑特色的"吊脚楼"风貌为主体，依山就势，沿江而建，解放碑直达江滨。
+              洪崖洞拥有2300多年的历史。"洪崖洞民俗风貌区"项目是2005年重庆市政府"八大民心工程"之一，总面积4.6万平方米，是"重庆市重点景观工程"和"AAA级重点旅游项目工程"。
+              该景区以拥城市旅游景观、商务休闲景观和城市人文景观于一体而闻名，并以最具巴渝传统建筑特色的"吊脚楼"风貌为主体，依山就势，沿崖而建，让解放碑直达江滨，是游吊脚群楼、观洪崖滴翠、逛山城老街、赏巴渝文化、看两江汇流、品天下美食的好去处，也是解放碑的会客厅。
+            </span>
+            <i class="two">
+              <span class="iconfont icon-xiangqu">添加到想去</span>
+              <span class="iconfont icon-wanchenggouxuan" style="display: none;">已添加</span>
+            </i>
+          </div>
+          <div class="items col-xs-12 col-md-6">
+            <div class="row"><img src="./images/chongqing/03.jpg" alt=""></div>
+          </div>
+          <div class="items info col-xs-12 col-md-6" id="three">
+            <span class="title">长江索道</span>
+            <p>基本信息</p>
+            <ul class="summary">
+              <li>
+                <span class="iconfont icon-dizhi"></span>
+                <span class="tag">地理位置</span>
+                长江上游地区
+              </li>
+              <li>
+                <span class="iconfont icon-dengji"></span>
+                <span class="tag">景点级别</span>
+                国家AAAA级景区
+              </li>
+              <li>
+                <span class="iconfont icon-jiagebaohu"></span>
+                <span class="tag">门票价格</span>
+                往返30元,单程20元
+              </li>
+              <li>
+                <span class="iconfont icon-bar_icon_shijian"></span>
+                <span class="tag">开放时间</span>
+                7:30~21:30
+              </li>
+            </ul>
+            <p>详细介绍</p>
+            <span class="paragraph"> 长江索道(Yangtze River
+              Cableway)，位于中国重庆，是重庆第二条跨江索道(第一条为嘉陵江索道(已拆除))，已经运行三十余年，被誉为"万里长江第一条空中走廊"和"山城空中公共汽车"。
+              长江索道是中国自行设计制造的大型跨江客运索道，全长1166米，连通重庆的渝中区和南岸区，往返于渝中区的新华路(轨道交通小什字站)和南岸区的上新街，速度6米/秒，运行时间4分钟，日运客量1.05万人次。
+              2020年2月，为致敬奋斗在抗"疫"一线的医务工作者，长江索道自恢复运营之日起至2020年12月31日，对全国所有医务工作者实行免费参观政策。 2020年11月18日，当选"成渝潮流新地标"。
+            </span>
+            <i class="three">
+              <span class="iconfont icon-xiangqu">添加到想去</span>
+              <span class="iconfont icon-wanchenggouxuan" style="display: none;">已添加</span>
+            </i>
+          </div>
+          <div class="items col-xs-12 col-md-6 col-md-push-6">
+            <div class="row"><img src="./images/chongqing/04.jpg" alt=""></div>
+          </div>
+          <div class="items info col-xs-12 col-md-6 col-md-pull-6" id="four">
+            <span class="title">解放碑步行街</span>
+            <p>基本信息</p>
+            <ul class="summary">
+              <li>
+                <span class="iconfont icon-dizhi"></span>
+                <span class="tag">地理位置</span>
+                重庆市渝中区
+              </li>
+              <li>
+                <span class="iconfont icon-yidimianji"></span>
+                <span class="tag">占地面积</span>
+                3.6平方米
+              </li>
+              <li>
+                <span class="iconfont icon-shijian"></span>
+                <span class="tag">游玩时长</span>
+                建议2~4小时
+              </li>
+              <li>
+                <span class="iconfont icon-bar_icon_shijian"></span>
+                <span class="tag">开放时间</span>
+                全天
+              </li>
+            </ul>
+            <p>详细介绍</p>
+            <span class="paragraph">
+              解放碑步行街，位于重庆市渝中区，1997年，由重庆市渝中区政府投资3000万元，以解放碑(人民解放纪念碑)为中心将解放碑大十字地区(民权路、民族路和邹容路的共2.24万平方米面积)改造成中国西部第一条商业步行街--解放碑中心购物广场。
+              解放碑CBD由"硬核"解放碑地区和"核缘"朝天门地区组成，承担商务、商贸双重功能。"硬核"部分东起小什字，北至沧白路、临江路、民生路，西至金汤街，南至和平路、新华路，占地0.92平方公里，"核缘"部分包括朝天门地区0.69平方公里。重庆解放碑CBD面积共计为1.61平方公里。
+              2019年，商务部印发《关于开展步行街改造提升试点工作的通知》，决定在重庆解放碑步行街开展步行街改造提升试点工作。
+            </span>
+            <i class="four">
+              <span class="iconfont icon-xiangqu">添加到想去</span>
+              <span class="iconfont icon-wanchenggouxuan" style="display: none;">已添加</span>
+            </i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 购物车模块 -->
+    <div class="row">
+      <div class="shopping">
+        <div class="head">
+          <h2 class="title">我的想去的地方</h2>
+        </div>
+        <div class="content">
+          <div class="thead">
+            <div class="checkbox">
+              <input type="checkbox" class="checkall">
+              全选
+            </div>
+            <div class="place">旅游地点</div>
+            <div class="time">游玩时间</div>
+            <div class="times">游玩次数</div>
+            <div class="sum">小计</div>
+            <div class="action">操作</div>
+          </div>
+          <div class="tbody">
+            <div class="index place-one">
+              <div class="items current">
+                <div class="p-checkbox">
+                  <input type="checkbox" class="j-checkbox">
+                </div>
+                <div class="p-place">
+                  <div class="p-img"><img src="./images/chongqing/01.jpg" alt=""></div>
+                  <div class="p-msg">磁器口古镇</div>
+                </div>
+                <div class="p-time"><span>3</span> 小时</div>
+                <div class="p-times">
+                  <div class="quantity-form">
+                    <a href="javascript:;" class="decrement">-</a>
+                    <input type="text" class="itxt" value="1">
+                    <a href="javascript:;" class="increment">+</a>
+                  </div>
+                </div>
+                <div class="p-sum"><span>3.0</span> 小时</div>
+                <div class="p-action"><a href="javascript:;">删除</a></div>
+              </div>
+            </div>
+            <div class="index place-two">
+              <div class="items current">
+                <div class="p-checkbox">
+                  <input type="checkbox" class="j-checkbox">
+                </div>
+                <div class="p-place">
+                  <div class="p-img"><img src="./images/chongqing/02.jpg" alt=""></div>
+                  <div class="p-msg">洪崖洞</div>
+                </div>
+                <div class="p-time"><span>4</span> 小时</div>
+                <div class="p-times">
+                  <div class="quantity-form">
+                    <a href="javascript:;" class="decrement">-</a>
+                    <input type="text" class="itxt" value="1">
+                    <a href="javascript:;" class="increment">+</a>
+                  </div>
+                </div>
+                <div class="p-sum"><span>4.0</span> 小时</div>
+                <div class="p-action"><a href="javascript:;">删除</a></div>
+              </div>
+            </div>
+            <div class="index place-three">
+              <div class="items current">
+                <div class="p-checkbox">
+                  <input type="checkbox" class="j-checkbox">
+                </div>
+                <div class="p-place">
+                  <div class="p-img"><img src="./images/chongqing/01.jpg" alt=""></div>
+                  <div class="p-msg">长江索道</div>
+                </div>
+                <div class="p-time"><span>30</span> 分钟</div>
+                <div class="p-times">
+                  <div class="quantity-form">
+                    <a href="javascript:;" class="decrement">-</a>
+                    <input type="text" class="itxt" value="1">
+                    <a href="javascript:;" class="increment">+</a>
+                  </div>
+                </div>
+                <div class="p-sum"><span>0.5</span> 小时</div>
+                <div class="p-action"><a href="javascript:;">删除</a></div>
+              </div>
+            </div>
+            <div class="index place-four">
+              <div class="items current">
+                <div class="p-checkbox">
+                  <input type="checkbox" class="j-checkbox">
+                </div>
+                <div class="p-place">
+                  <div class="p-img"><img src="./images/chongqing/04.jpg" alt=""></div>
+                  <div class="p-msg">解放碑步行街</div>
+                </div>
+                <div class="p-time"><span>2</span> 小时</div>
+                <div class="p-times">
+                  <div class="quantity-form">
+                    <a href="javascript:;" class="decrement">-</a>
+                    <input type="text" class="itxt" value="1">
+                    <a href="javascript:;" class="increment">+</a>
+                  </div>
+                </div>
+                <div class="p-sum"><span>2.0</span> 小时</div>
+                <div class="p-action"><a href="javascript:;">删除</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="tfooter">
+            <div class="goback">GoBack</div>
+            <a href="javascript:;" class="remove-batch">移除选中地点</a>
+            <a href="javascript:;" class="clear-all">清空所有地点</a>
+            <div class="amount-sum">
+              总游玩次数为
+              <em></em>
+              次
+            </div>
+            <div class="price-sum">
+              总花费时间
+              <em></em>
+              小时
+            </div>
+            <div class="btn-area">
+              去结算
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 页脚模块 -->
+    <div class="row">
+      <div class="footer">
+        <div class="center">
+          <div class="copyright">
+            <p class="hidden-xs">重庆师范大学计算机与信息科学学院</p>
+            <p class="hidden-xs">计算机科学与技术2020级 (对口高职)</p>
+            <p>石松林个人网站 版权所有&copy;</p>
+            <p></p>
+          </div>
+          <ul class="list">
+            <span class="hidden-xs">联系方式</span>
+            <li>
+              <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2303418053&amp;site=qq&amp;menu=yes">
+                <i class="iconfont icon-tubiao215"></i>
+                <span class="hidden-xs">QQ</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:15736576364">
+                <i class="iconfont icon-dianhua"></i>
+                <span class="hidden-xs">电话</span>
+              </a>
+            </li>
+            <li>
+              <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=2303418053@qq.com" target="_blank">
+                <i class="iconfont icon-youxiang"></i>
+                <span class="hidden-xs">邮箱</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <i class="iconfont icon-weixin"></i>
+                <span class="last"><img src="./images/QR.png" alt=""></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 返回顶部模块 -->
+    <div class="back">
+      <div class="xs visible-xs">
+        <span class="iconfont icon-fanhuidingbu"></span>
+      </div>
+      <div class="hidden-xs">
+        <span class="iconfont icon-fanhuidingbu"></span>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <!-- 引入我们的 index.js  -->
+  <script src="./js/chongqing/index.js"></script>
+  <!-- 引入基本共用 base.js  -->
+  <script src="./js/base.js"></script>
+  <!-- 引入购物车 shopping.js -->
+  <script src="./js/chongqing/shopping.js"></script>
+  <!-- 引入补丁 mend.js  -->
+  <script src="./js/mend.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>
